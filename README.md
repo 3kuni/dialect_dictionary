@@ -15,6 +15,7 @@ Mermaid記法でER図を書き出しておく
 @vite('resources/css/app.css')
 ```
 2. `yarn run dev`でビルドする
+3. `yarn run build`で本番環境用にビルドする
 
 ## nodeのバージョンをあわせる
 開発時、nodeのバージョンを合わせる
