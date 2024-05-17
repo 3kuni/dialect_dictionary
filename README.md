@@ -25,6 +25,10 @@ Mermaid記法でER図を書き出しておく
 2. `yarn run dev`でビルドする
 3. `yarn run build`で本番環境用にビルドする
 
+## 暫定版管理者ページのアクセス方法
+`http://localhost:8000/admin?email=admin@example.com`
+セキュリティ上の問題があるため、Userモデル作成後に修正する
+
 ## Heroku上でのデバッグ表示
 デバックを表示するかを環境変数で設定している
 `APP_DEBUG=true`
