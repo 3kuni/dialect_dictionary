@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 // 管理者向けページ
-Route::get('/admin', function () {
-    return view('admin.dashboard');
+Route::middleware(['is_admin_by_email'])->group(function () {
+    Route::get('/admin', function () {
+        return view('admin.dashboard');
+    });
 });
